@@ -1,8 +1,9 @@
 from langchain.agents import Tool
 import boto3
 import json
+import os
 
-lambda_client = boto3.client('lambda')
+lambda_client = boto3.client('lambda', region_name=os.getenv('AWS_REGION'))
 function_name_1 = 'riassume-turnon-ec2-lambda'
 function_name_2 = 'riassume-turnoff-ec2-lambda'
 payload = {}
