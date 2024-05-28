@@ -48,10 +48,25 @@ In this project ReAct agent has been used.
 
 To launch the project:
 
+1. clone project 
+
 ```console
 git clone https://github.com/riolaf05/langchain-rag-agent-chatbot.git
+```
+
+2. populate .env
+
+3. setup
+
+```console
 py -m .venv/rag
 source .venv/rag/bin/activate
 pip install -r requirements.txt
 python telegram.py
 ```
+
+# References
+
+* [Introducing LangChain Agents: 2024 Tutorial with Example](https://brightinventions.pl/blog/introducing-langchain-agents-tutorial-with-example/)
+
+* [Using LangChain ReAct Agents with Qdrant and Llama3 for Intelligent Information Retrieval](https://medium.com/@yash9439/using-langchain-react-agents-with-qdrant-and-llama3-for-intelligent-information-retrieval-b181ce7a5962)
