@@ -23,5 +23,4 @@ COPY utils/ utils/
 COPY telegram.py telegram.py 
 
 #for normal deploy
-ENTRYPOINT ["/app/python", "telegram.py"]
 
