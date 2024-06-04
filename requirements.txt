@@ -1,4 +1,4 @@
-anyio==3.6.2
+# anyio==3.6.2
 boto3==1.26.137
 botocore==1.29.137
 click==8.1.3
@@ -9,15 +9,15 @@ jmespath==1.0.1
 pydantic==2.6.4
 python-dateutil==2.8.2
 s3transfer==0.6.1
-six==1.16.0
-sniffio==1.3.0
-starlette==0.35.0
-typing-extensions==4.8.0
+# six==1.16.0
+# sniffio==1.3.0
+# starlette==0.35.0
+# typing-extensions==4.8.0
 urllib3==1.26.18
-uvicorn==0.22.0
+# uvicorn==0.22.0
 #google-cloud-speech==2.26.0
 openai==1.14.1
-moviepy==1.0.3 # (o-a-s) 6/4/2024
+# moviepy==1.0.3 # (o-a-s) 6/4/2024
 # PyPDF2~=2.0
 # numpy==1.26.0
 filetype==1.2.0 # (o-a-s) 7/4/2024
@@ -26,15 +26,15 @@ python-multipart==0.0.9
 httptools==0.6.1
 # uvloop
 langchain
-langchain-experimental
-langchain-openai==0.0.6
+# langchain-experimental
+# langchain-openai==0.0.6
 requests==2.31.0
 trubrics[streamlit]
 
 # spacy==3.6.1
-tiktoken==0.6.0
-mutagen==1.47.0
-func_timeout==4.3.5
+# tiktoken==0.6.0
+# mutagen==1.47.0
+# func_timeout==4.3.5
 # s3fs==2023.9.2
 
 # yt_dlp
@@ -59,10 +59,10 @@ groq
 langchain-groq
 # langgraph
 fastembed
-langchain-community 
+# langchain-community 
 langchainhub
 tavily-python
 ollama
-transformers
-torch
+# transformers
+# torch
 telepot
