@@ -51,7 +51,7 @@ def on_chat_message(msg):
             # res=chain.invoke({"text": response['output']}).content
             # res=re.sub(r'\n', '', res)
             # res=re.sub(r'\\', '', res)
-            bot.sendMessage(TELEGRAM_GROUP_ID, response)
+            bot.sendMessage(TELEGRAM_GROUP_ID, response['output'])
         
         except Exception as e:
             bot.sendMessage(TELEGRAM_GROUP_ID, "Ho avuto un problema!")
