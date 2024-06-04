@@ -59,7 +59,7 @@ groq
 langchain-groq
 # langgraph
 fastembed
-# langchain-community 
+langchain-community 
 langchainhub
 tavily-python
 ollama
