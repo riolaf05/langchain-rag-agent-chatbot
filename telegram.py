@@ -27,7 +27,7 @@ tools = [get_relevant_document_tool, get_today_date_tool, web_search_tool, ec2_s
 retrieved_text = ""
 
 # Load ReAct prompt
-prompt_react = hub.pull("hwchase17/react")
+# prompt_react = hub.pull("hwchase17/react")
 
 # Initialize ChatGroq model for language understanding
 model = ChatGroq(model_name="llama3-70b-8192", groq_api_key=GROQ_API_KEY, temperature=0)
