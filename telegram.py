@@ -17,6 +17,7 @@ from tools.retrieval_eventi import get_relevant_document_tool
 from tools.tavily import web_search_tool 
 from tools.utils import get_today_date_tool, get_summarized_text_tool
 from tools.aws import ec2_shutdown_tools, ec2_turnon_tools
+from prompts.react import prompt_react
 
 TELEGRAM_CHAT_ID=os.getenv('TELEGRAM_CHAT_ID')
 TELEGRAM_GROUP_ID=os.getenv('TELEGRAM_GROUP_ID')
@@ -46,13 +47,13 @@ def on_chat_message(msg):
             input_text = input_text.split(" ")
             response = react_agent_executor.invoke({"input": input_text})
 
-            #traduci
-            prompt_template = ChatPromptTemplate.from_template("Traduci {text} in italiano. Restituisci solo la traduzione fedele senza commenti aggiuntivi. Non restituire dizionari, solo stringhe, senza virgolette. La traduzione: ")
-            chain = ( {"text": RunnablePassthrough() } | prompt_template | model  ) 
-            res=chain.invoke({"text": response['output']}).content
-            res=re.sub(r'\n', '', res)
-            res=re.sub(r'\\', '', res)
-            bot.sendMessage(TELEGRAM_GROUP_ID, res)
+            # #traduci
+            # prompt_template = ChatPromptTemplate.from_template("Traduci {text} in italiano. Restituisci solo la traduzione fedele senza commenti aggiuntivi. Non restituire dizionari, solo stringhe, senza virgolette. La traduzione: ")
+            # chain = ( {"text": RunnablePassthrough() } | prompt_template | model  ) 
+            # res=chain.invoke({"text": response['output']}).content
+            # res=re.sub(r'\n', '', res)
+            # res=re.sub(r'\\', '', res)
+            bot.sendMessage(TELEGRAM_GROUP_ID, response)
         
         except Exception as e:
             bot.sendMessage(TELEGRAM_GROUP_ID, "Ho avuto un problema!")

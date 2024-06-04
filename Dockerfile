@@ -19,6 +19,7 @@ RUN pip3 install -r requirements.txt
 # COPY config.yaml config.yaml
 # COPY .env .env
 COPY tools/ tools/
+COPY prompts/ prompts/
 COPY utils/ utils/
 COPY telegram.py telegram.py 
 
