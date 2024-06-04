@@ -1,4 +1,6 @@
-prompt_react="""
+from langchain_core.prompts import PromptTemplate
+
+prompt_react=PromptTemplate.from_template("""
 
 Va bene, ecco la traduzione in italiano:
 
@@ -30,4 +32,4 @@ Inizia!
 
 Domanda: {input}
 Ragionamento: {agent_scratchpad}
-"""
+""")
