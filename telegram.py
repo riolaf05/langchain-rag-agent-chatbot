@@ -43,9 +43,7 @@ def on_chat_message(msg):
     if content_type == 'text':
         try:
             #name = msg["first_name"]
-            input_text = msg['text']
-            input_text = input_text.split(" ")
-            response = react_agent_executor.invoke({"input": input_text})
+            response = react_agent_executor.invoke({"input": msg['text'].split(" ")})
 
             # #traduci
             # prompt_template = ChatPromptTemplate.from_template("Traduci {text} in italiano. Restituisci solo la traduzione fedele senza commenti aggiuntivi. Non restituire dizionari, solo stringhe, senza virgolette. La traduzione: ")
