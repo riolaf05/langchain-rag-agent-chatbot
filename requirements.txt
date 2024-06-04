@@ -63,6 +63,6 @@ langchain-community
 langchainhub
 tavily-python
 ollama
-# transformers
-# torch
+transformers
+torch
 telepot
