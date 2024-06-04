@@ -17,7 +17,7 @@ from tools.retrieval_eventi import get_relevant_document_tool
 from tools.tavily import web_search_tool 
 from tools.utils import get_today_date_tool, get_summarized_text_tool
 from tools.aws import ec2_shutdown_tools, ec2_turnon_tools
-from prompts.ReAct import prompt_react
+from prompts.react import prompt_react
 
 TELEGRAM_CHAT_ID=os.getenv('TELEGRAM_CHAT_ID')
 TELEGRAM_GROUP_ID=os.getenv('TELEGRAM_GROUP_ID')
