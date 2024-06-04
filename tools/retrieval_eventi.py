@@ -27,5 +27,5 @@ def get_relevant_document(question : str) -> str:
 get_relevant_document_tool = Tool(
     name="Web eventi",
     func=get_relevant_document,
-    description="Utile per cercare documenti relativi a ristoranti, locali o agli eventi in città"
+    description="Utile per cercare informazioni relative a ristoranti, locali o ad eventi."
 )
