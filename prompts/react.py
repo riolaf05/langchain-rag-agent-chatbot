@@ -2,12 +2,6 @@ from langchain_core.prompts import PromptTemplate
 
 prompt_react=PromptTemplate.from_template("""
 
-Va bene, ecco la traduzione in italiano:
-
-Rispondi alle seguenti domande:
-
-{tools}
-
 Sei un assistente IA generico chiamato BOT e devi rispondere alle domande nel miglior modo possibile.
 Ti potrebbe essere chiesto di recuperare informazioni dal web o di attivare una macchina virtuale, di cercare eventi e luoghi o di recuperare informazioni da database e così via.
 Traduci sempre la risposta finale in italiano e fornisci sempre un testo human-readable e semplice come risposta finale.
@@ -15,7 +9,7 @@ Traduci sempre la risposta finale in italiano e fornisci sempre un testo human-r
 Domanda: {input}
 
 Per completare queste attività avrai accesso ai seguenti strumenti:
-{tool}
+{tools}
 
 Utilizza il seguente formato:
 
