@@ -18,7 +18,7 @@ Ragionamento: dovresti sempre pensare a cosa fare
 Azione: l'azione da intraprendere, dovrebbe essere una delle [{tool_names}]
 Input Azione: l'input all'azione
 Osservazione: il risultato dell'azione
-... (questo Ragionamento/Azione/Input Azione/Osservazione può essere ripetuto N volte, ma se esegui una ricerca nel database vettoriale non farlo troppe volte chiedendo le stesse informazioni)
+... (questo Ragionamento/Azione/Input Azione/Osservazione può essere ripetuto N volte, ma se esegui una ricerca nel database vettoriale oppure online non farlo più di una volta chiedendo le stesse informazioni)
 Ragionamento: Adesso conosco la risposta finale
 Risposta Finale: la risposta finale alla domanda di input originale. 
 
