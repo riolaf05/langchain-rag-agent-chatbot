@@ -22,5 +22,5 @@ COPY utils/ utils/
 COPY telegram.py telegram.py 
 
 #for normal deploy
-ENTRYPOINT ["python", "telegram.py"]
+CMD ["python", "telegram.py"]
 
