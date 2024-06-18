@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-# HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+HEALTHCHECK CMD curl --fail http://localhost:8080 || exit 1
 
 # COPY config.yaml config.yaml
 # COPY .env .env
