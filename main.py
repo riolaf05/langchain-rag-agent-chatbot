@@ -1,4 +1,5 @@
 from tools.retrieval_eventi import get_relevant_document_tool 
+from tools.aws import ec2_shutdown_tools, ec2_turnon_tools
 from tools.tavily import web_search_tool 
 from tools.utils import get_today_date_tool
 # from prompts.react import prompt_react

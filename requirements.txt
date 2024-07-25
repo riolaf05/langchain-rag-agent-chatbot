@@ -66,3 +66,4 @@ ollama
 transformers
 torch
 telepot
+semantic-router==0.0.20
