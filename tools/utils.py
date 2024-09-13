@@ -1,4 +1,13 @@
 from langchain.agents import Tool
+from datetime import datetime
+
+
+# @tool_call
+# def get_current_datetime() -> dict:
+#     """Get the current datetime."""
+#     return {
+#         'datetime': datetime.utcnow()
+#     }
 
 def get_today_date(input : str) -> str:
     import datetime
