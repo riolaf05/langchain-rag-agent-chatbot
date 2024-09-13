@@ -1,3 +1,6 @@
+# References
+# https://developers.google.com/calendar/api/quickstart/python?hl=it
+
 import datetime
 import os.path
 from langchain.agents import Tool
